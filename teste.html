@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Anos de Amor - Diury e Isabelle</title>
+    <style>
+       /* Altera o tamanho da barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Altera a cor do trilho da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #f76c6c;
+}
+
+/* Altera a cor da parte que se move da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #ffadad;
+  border-radius: 5px;
+}
+
+/* Altera a cor da parte da barra de rolagem quando o usuário está interagindo */
+::-webkit-scrollbar-thumb:hover {
+  background: #720303;
+} body {
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            background: #eee2d3;
+            color: #4b2c20;
+            line-height: 1.8;
+            padding: 20px;
+            background-image: url('textura-papel.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: #ffadad;
+            color: white;
+            padding: 20px;
+            border-bottom: 5px dashed #f76c6c;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px #ff6f61;
+        }
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            border: 3px solid #f8c6a1;
+        }
+        .photo {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .foto {
+            transform: rotate(+3deg);
+        }
+        .photo img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transform: rotate(-3deg);
+            border: 6px solid white;
+        }
+        .photo::before {
+            content: "";
+            position: absolute;
+            width: 270px;
+            height: 270px;
+            top: -15px;
+            left: 10px;
+            background: url('polaroid-texture.png') no-repeat center;
+            background-size: cover;
+            z-index: -1;
+            transform: rotate(-1deg);
+        }
+        .photo p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #4b2c20;
+            background: #ffe5d9;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-style: italic;
+            display: inline-block;
+            border: 2px dashed #ffadad;
+        }
+        .text-block {
+            margin: 20px 0;
+            font-size: 1.2rem;
+            background-color: rgba(255, 228, 199, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border: 2px dashed #f8c6a1;
+        }
+        .text-block::before {
+            content: "\2665"; /* coração */
+            font-size: 2rem;
+            color: #ff6f61;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            transform: rotate(-10deg);
+        }
+        .video1{
+            transform: rotate(+3deg);
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .video1 video {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border: 6px solid white;
+        }
+        .video1 p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #4b2c20;
+            background: #ffe5d9;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-style: italic;
+            display: inline-block;
+            border: 2px dashed #ffadad;
+        }
+        .video {
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            transform: rotate(-3deg);
+        }
+        .video video {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border: 6px solid white;
+        }
+        .video p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #4b2c20;
+            background: #ffe5d9;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-style: italic;
+            display: inline-block;
+            border: 2px dashed #ffadad;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #ffadad;
+            color: white;
+            border-top: 5px dashed #f76c6c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feliz 2.9 Anos Meu Amor!</h1>
+    </header>
+    <audio controls>
+        <source src="videos/videoplayback.m4a" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+    <section>
+        <div class="photo">
+            <img src="fotos/foto eu sorrindo.jpeg" alt="Nosso primeiro encontro">
+            <p>"olha como somos fofinhos!!"</p>
+        </div>
+        <div class="text-block">
+            <p>“Você é assim, um sonho pra mim. E quando não te vejo, eu penso em você...”</p>
+        </div>
+
+        <div class="video1">
+            <video controls>
+                <source src="videos/WhatsApp Video 2025-01-22 at 12.28.48.mp4" type="video/mp4">
+                
+            </video>
+              </div>
+        <div class="text-block">
+            <p>Explorar o mundo ao seu lado é como ver tudo pela primeira vez. Com você, cada lugar fica mais bonito.</p>
+        </div>
+
+        <div class="photo">
+            <img src="fotos/foto diury telefone.jpeg" alt="Momentos inesquecíveis">
+            <p>“Porque eu te amo e falo na sua cara. Se tira você de mim, não sobra nada...”</p>
+        </div>
+        <div class="text-block">
+            <p>Até fui pro turno da noite só pra ficar contigo, muito amor mesmo.</p>
+        </div>
+
+        <div class="video1">
+            <video controls>
+                <source src="videos/video praia.mov" type="video/mp4">
+                
+            </video></div>
+        <div class="text-block">
+            <p>KKKKKKKKKKKKKKK muito bom, saudades da praia e de dormir contigo todos os dias.</p>
+        </div>
+
+        <div class="photo">
+            <img src="fotos/pé preto.jpeg" alt="Dias felizes na praia">
+            <p>“Mesmo com os pés no chão, meu sonho vai te alcançar.”"</p>
+        </div>
+        <div class="text-block">
+            <p>Eu te amo até com esse teu pé preto aí, fedido.</p>
+        </div>
+
+        <div class="photo">
+            <img src="fotos/beijinho.jpeg" alt="Nosso amor em 2025">
+            <p>“Eu só 'to buscando minha melhor versão”</p>
+        </div>
+        <div class="text-block">
+            <p>Quase três anos juntos, e você ainda faz meu coração disparar. Obrigado por ser minha melhor versão.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Eu amo tu xuxu (eu sei que é com ch)</p>
+    </footer>
+</body>
+</html>
